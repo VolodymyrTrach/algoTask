@@ -10,14 +10,14 @@ const task322 = new Task(
 const task88_1 = new Task(
     88_1,
     "Does it include '3'",
-    "You have the natural number n. Find out if n to the power of 2 includes '3'",
+    "You have the natural number n. Find out if n to the power of 2 includes '3'. Please enter 'n'",
     task88_1
 )
 
 const task88_2 = new Task(
     88_1,
     "Maximum amount of dividers",
-    "You have the natural number n. Reverse number n to the power of 2",
+    "You have the natural number n. Reverse number n to the power of 2.Please enter 'n'",
     task88_2
 )
 
