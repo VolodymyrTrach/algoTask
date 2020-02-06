@@ -15,8 +15,8 @@ const task88_1 = new Task(
 )
 
 const task88_2 = new Task(
-    88_1,
-    "Maximum amount of dividers",
+    88_2,
+    "Reverse",
     "You have the natural number n. Reverse number n to the power of 2.Please enter 'n'",
     task88_2
 )
