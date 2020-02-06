@@ -1,0 +1,80 @@
+function start(){
+    const exercise = [322,88]
+    let exerNumb = +prompt(`Please chose number of 
+    exercise you whant to execute ${exercise}`);
+    if (exerNumb && exercise.includes(exerNumb)){
+        execution(exerNumb);
+    }else if(exerNumb){
+        alert('Please chose correct number of exercise');
+        start();
+    }
+}
+
+function execution(taskNumber){
+    switch(taskNumber){
+        case(322):task322()
+        break;
+        case(88):fork()
+        break;
+    }
+    }
+
+function fork(){
+    let whatTask = prompt('This task has 4 exercises(a,b,c,d). Wich one do you want?');
+    switch(whatTask){
+        case('a'): task88_1()
+        break;
+        case('b'): task88_2()
+        break;
+        case(c): alert('not yet')
+        break;
+        case(d):  alert('not yet')
+        break;
+        default:alert('You have to choose a,b,c or d')
+    }
+}
+
+start();
+
+//Task 322
+function task322(){
+let maxLenght = 0;
+let number = 0;
+for (let n = 1; n <= 10000; n++) {
+    let lengh = findLenght(n);
+    if (lengh > maxLenght) {
+        maxLenght = lengh;
+        number = n;
+    }
+}
+console.log(`Maximum number is ${number} and it has ${maxLenght} dilnykiv`)
+
+function findLenght(n) {
+    let dil = [];
+    for (let i = 1; i <= n; i++) {
+        if (n % i === 0) {
+            dil.push(i);
+        }
+    }
+    return dil.length;
+}
+}
+//Task 88a
+
+function task88_1() {
+    let number = +prompt('Input the value');
+    let strNumber = Math.pow(number,2).toString();
+    if(strNumber.includes(3)){
+        console.log(`YES! ${strNumber} includes 3`)
+    } else {
+        console.log(` ${strNumber} does not includes 3`)
+    }
+}
+
+// Task 88б
+function task88_2() {
+let number = +prompt('Input the value');
+let strNumber = Math.pow(number,2).toString();
+let reverse = strNumber.split("").reverse().join("");
+console.log(reverse);
+}
